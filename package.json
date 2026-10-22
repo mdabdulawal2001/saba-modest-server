@@ -1,0 +1,25 @@
+{
+  "name": "saba-modest-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node src/scripts/seed-products.js"
+  },
+  "dependencies": {
+    "@better-auth/mongo-adapter": "^1.7.3",
+    "better-auth": "^1.7.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
