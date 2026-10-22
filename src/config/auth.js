@@ -21,6 +21,7 @@ export const auth = betterAuth({
   trustedOrigins: [env.authUrl],
   emailAndPassword: {
     enabled: true,
+    autoSignIn: false,
   },
   ...(socialProviders ? { socialProviders } : {}),
   advanced: {
